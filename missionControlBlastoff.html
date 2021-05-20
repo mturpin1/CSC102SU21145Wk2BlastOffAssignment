@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--sets the doc type to HTML, so the browser knows it is running HTML-->
+<!--Author: Micah Turpin
+email: micturpi@uat.edu
+purpose: week 1 assignment - Assignment: Launching your UAT Space Program HTML Document Tags-->
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <!--links the CSS style sheet to HTML doc-->
+    <script src="code.js"></script>
+    <!--links the JS code sheet to HTML doc-->
+    <style>
+      body {
+        background-color: white;
+        /*sets the background color of the body on the webpage to white*/
+      }
+
+      img {
+        transition: 0.5s ease; /*sets the time and type of any transitions/transformations/animations on pictures*/
+      }
+
+      img:hover {
+        transform: scale(
+          1.1,
+          1.1
+        ); /*scales any images hovered over to 1.1 times both the width and height*/
+      }
+    </style>
+    <title>
+      Micah Turpin - UATSpace Page <!--sets the title of the webpage-->
+    </title>
+  </head>
+  <body>
+    <script>
+      document.write("Today's date is " + Date());
+      /*creates a document.write function that writes out the date of today, using a javascript function*/
+    </script>
+    <br />
+    <br />
+    <!--page break-->
+    <img src="https://uat.instructure.com/courses/4159/files/533955/preview" />
+    <!--sets the image to the space logo-->
+    <h1>UATSpace Page</h1>
+    <!--header on the webpage-->
+    <p>Test of the paragraph tags</p>
+    <!--paragraph on the website-->
+    <br />
+    <div id="countdownStatus">Countdown Status</div>
+    <br />
+
+    <button type="button" id="start" onclick="countdownTimer();">Start</button>
+    <!--creates a start button-->
+    <button type="button" id="stop">Stop</button>
+    <!--creates a stop button-->
+  </body>
+</html>
